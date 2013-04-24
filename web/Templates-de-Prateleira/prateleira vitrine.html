@@ -1,0 +1,41 @@
+#set($id = $product.Id)
+#set($uri = $product.Uri)
+#set($escapedName = $product.HtmlEscapedName)
+#set($evaluationRate = $product.EvaluationRate)
+<div class="shelf-wrapper" id="$id">
+    <div class="shelf-image-container">
+	    <a class="shelf-image" title="$escapedName" href="$uri">$product.GetImageTag(29)</a>
+	</div>
+	<div class="shelf-content">
+		<h3><a title="$escapedName" href="$uri">$product.Name</a></h3>
+		<div id="rating-product-$id" class="shelf-rating avaliacao$evaluationRate">$evaluationRate</div>
+		<div class="shelf-description-short">$product.DescriptionShort</div>
+	    #if ($product.IsInStock)
+			<p class="shelf-price">
+				<a title="$escapedName" href="$uri">
+					#if ($product.HasBestPrice)
+						<span class="old-price">De <span>$product.ListPrice</span></span>
+	                	<span class="new-price">Por <strong>$product.BestPrice</strong></span>
+	                #else
+	                	<span class="new-price"><strong>$product.BestPrice</strong></span>
+					#end
+	                 
+					#if ($product.NumbersOfInstallment > 1)
+	                <span class="installment">
+						ou ${product.NumbersOfInstallment}x de <strong>$product.InstallmentValue</strong>
+					</span>
+					#end
+				</a>
+			</p>
+			<div class="shelf-button">$product.BottomBuy</div>
+		#else
+            <div class="out-of-stock">
+                <a title="$escapedName" href="$uri">avise-me quando disponível</a>
+            </div> 
+		#end
+		<p class="shelf-category"><a href="$product.CategoryLink">$product.CategoryName</a></p>
+		<p class="shelf-brand">$product.BrandLink</p>
+	</div>
+	<div class="discount">$product.DiscountHightLight</div>
+	<a class="btn-quickview" rel="nofollow" href="/quick-view/?idproduto=$id">Espiar</a>
+</div>
