@@ -1,0 +1,107 @@
+/*
+* @author Marcelo Anderson(www.marceloanderson.com.br)
+* @date 2012-10-02 
+*/
+
+/* !vtex.normalize.css
+---------------------------------------- */
+audio,canvas,video{display:inline;zoom:1}*{outline:none;margin:0;padding:0}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}body{font-size:12px;line-height:normal}body,button,input,select,textarea{color:#222;font-family:Arial, Helvetica, sans-serif}a{color:#000;outline:none;text-decoration:none}a:hover,a:active{outline:0}a:hover{text-decoration:underline}h1{font-size:30px;line-height:36px}h2{font-size:24px;line-height:36px}h3{font-size:20px;line-height:28px}h4{font-size:18px;line-height:22px}h5{font-size:14px;line-height:18px}h6{font-size:12px;line-height:18px}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}blockquote{margin:1em 40px}dfn{font-style:italic}ins{background:#ff9;color:#000;text-decoration:none}mark{background:#ff0;color:#000;font-style:italic;font-weight:700}pre,code,kbd,samp{font-family:monospace, serif; :'courier new', monospace;font-size:1em}pre{white-space:pre-wrap;word-wrap:break-word}q{quotes:none}q:before,q:after{content:none}small{font-size:85%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}ul,ol,nav ul,nav ol{list-style:none;list-style-image:none;margin:0;padding:0}img{border:0;-ms-interpolation-mode:bicubic;vertical-align:middle}svg:not(:root){overflow:hidden}form,figure,fieldset{border:0;margin:0;padding:0}legend{border:0;margin-left:-7px;white-space:normal;padding:0}button,input,select,textarea{color:#222;font-family:Arial, Helvetica, sans-serif;font-size:100%;vertical-align:middle;margin:0}button,input{line-height:normal}button,input[type=button],input[type=reset],input[type=submit]{cursor:pointer;-webkit-appearance:button;overflow:visible}input[type=checkbox],input[type=radio]{box-sizing:border-box;width:13px;height:13px;padding:0}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-decoration,input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;outline:none;padding:0}textarea{overflow:auto;vertical-align:top;resize:vertical}input:invalid,textarea:invalid{background-color:#f0dddd}table{border-collapse:collapse;border-spacing:0}td{vertical-align:top}.chromeframe{background:#ccc;color:#000;margin:.2em 0;padding:.2em 0}.pull-right{float:right}.pull-left{float:left}.hide-text{background-color:transparent;border:0;color:transparent;font-size:0;line-height:0;text-shadow:none;text-indent:9999em}.hidden{display:none!important;visibility:hidden}.invisible{visibility:hidden}.dualColumn{float:left;width:50%}.fourthColumn{float:left;width:25%}.clear{clear:both;zoom:0}.clearfix:before,.clearfix:after{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary,.show{display:block}audio:not([controls]),[hidden],hr,.hide{display:none}label,button[disabled],input[disabled]{cursor:default}
+
+/* General
+---------------------------------------- */
+body {background:#FFF; position: relative;}
+body, button, input, select, textarea {color: #666; font-size: 12px; font-family: Arial, Helvetica, sans-serif;}
+a{color: #000;}
+
+.tpl-container,
+.tpl-main,
+.mainContentWrapper,
+.header-steps{margin: 0 auto; width: 980px;}
+
+.tpl-main,
+.mainContentWrapper{padding: 0 0 30px;}
+
+.left-column {float: left; width: 175px;}
+.main-column {float: left; width: 770px;}
+.right-column{float: left; width: 175px;}
+
+/* Títulos */
+h2{border: solid #e2e9ed; border-width: 1px 0 3px 0; color:#014975; font-size: 26px; font-family: "Franklin Gothic Demi", "Franklin Gothic", Arial, sans-serif; line-height:48px; margin-bottom: 26px; padding:0 0 0 22px;}
+
+
+/* Loading
+---------------------------------------- */
+div#ajaxBusy, div.loading{display:none; height:1px; left:0; position:fixed; top:0; text-align:center; width:100%; z-index:999999;}
+div#ajaxBusy p, div.loading p{background:url(/arquivos/ajax-loader2.gif) no-repeat 115px center #FFF6BF; border:2px #FFD324 solid; border-top:0; border-radius:0 0 5px 5px; box-shadow:0 0 10px rgba(0,0,0,0.7); display:block; font-size:14px; font-weight:bold; margin:0 auto; padding:8px 30px 8px 0;  width:120px;}
+
+
+/* aviso-erro
+---------------------------------------- */
+.aviso-erro, .alerta{background:#fcf8e3 url(/arquivos/icoAlerta.png) no-repeat 10px 15px; border: 1px solid #fbeed5; color: #c09853; font-size:12px; margin:0 0 20px; padding:15px 15px 15px 35px; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);}
+.aviso-erro > p{font-size: 14px; margin-bottom: 8px}
+.aviso-erro ul{list-style:none;}
+.aviso-erro ul li{color:#e40000; line-height: normal; padding:2px 0;}
+input.error{border:1px solid #e40000 !important;}
+.obr {color:#e40000;}
+
+.dica-carrinho{background-color: #DFF0D8;  border: 1px solid #D6E9C6; border-top: none; color: #468847; left:0; height:auto; position:fixed; top:0; width:100%; z-index:200;}
+.dica-carrinho h4{display:none;}
+.dica-carrinho p {color:#468847; font-size:12px; margin: 0 auto; padding:8px 15px; position:relative; text-align:center; width:970px;}
+
+
+/* Header
+---------------------------------------- */
+.tpl-header .tpl-container{position: relative;}
+.tpl-header h1,
+.header-steps h1{float:left; padding: 11px 0 0 20px;}
+.tpl-header h1 a,
+.header-steps h1 a{background: url("/arquivos/logotipo_166x82.png") no-repeat; display: block; height: 82px; line-height: 0; font-size: 0; text-indent: -9000em; width: 166px;}
+.tpl-header-content{float: left; padding-left: 32px; width:762px;}
+.tpl-top-bar {height:36px;}
+
+/* welcome */
+.tpl-welcome {float: left; font-size:12px; padding-top: 12px; line-height: 16px;}
+.tpl-welcome *{color:#014975; font-style: normal;}
+.tpl-welcome .welcome{font-weight: bold;}
+.tpl-welcome .loginmsg {font-size: 10px;}
+.tpl-welcome .loginmsg {font-weight: normal;}
+.tpl-welcome .loginmsg a{padding-left: 4px;}
+.tpl-welcome p{float: left; margin-right: 4px;}
+.tpl-welcome a{text-decoration: underline;}
+.tpl-welcome a:hover{text-decoration: none;}
+
+/* Top bar */
+.tpl-top-nav{float:right; height:28px;}
+.tpl-top-nav li{line-height:28px; float:left; margin-left:24px;}
+.tpl-top-nav a{color:#014975; font-size:11px; display:block;}
+.tpl-top-nav .nav-list{background:#D4DDE3; padding:0 12px;}
+
+/* Search Top */
+.tpl-top-search{float:left; padding-top: 12px; width:536px;}
+.tpl-top-search legend, .tpl-top-search label, .tpl-top-search select{display: none;}
+.tpl-top-search input {float: left;}
+.tpl-top-search .fulltext-search-box,
+.tpl-top-search .fitext {background:url("/arquivos/bgSearch_1x28.png") repeat-x 0 0; border:1px solid #80a4ba; color:#306b8f; display: block; font-size:12px; height:28px; line-height: 28px; padding:0 17px; width: 402px;}
+.tpl-top-search .btn-buscar,
+.tpl-top-search .fibutton {background:#F9A648 url(/arquivos/ico-bt-buscar.png) no-repeat 9px 3px; color:#014975; display: block; font-size:13px; font-weight:bold; font-family: Tahoma, Geneva, sans-serif; height:30px; line-height:30px; margin-left:1px; padding: 0 12px 0 0; text-align: right; width:95px;}
+.tpl-top-search .btn-buscar:hover,
+.tpl-top-search .fibutton:hover{background:#ff6633;}
+
+/* cart */
+.tpl-cart {background:url(/arquivos/bg-cart.png) no-repeat 0 0; float:right; height:57px; width:205px;}
+.tpl-cart .cart-link {*cursor:pointer; display:block; height:47px; padding: 10px 0 0 0; text-decoration: none; width:205px;}
+.tpl-cart .title {color:#FFF; display:block; float:left; font-size:12px; line-height:34px; margin-right:5px; text-align:left;}
+.amount-products, .amount-kits {display:none;}/*elementos ocultos*/
+.cart-info {float:left; line-height:30px; width:154px;}
+.cart-info li{color:#FFF; font-size:12px; float:left; text-align:left;}
+.cart-info li em {font-style:normal;}
+.cart-info li.amount-items {margin-right:5px;}
+.cart-info li.total-cart {}
+.cart-info li.amount-items strong,
+.cart-info li.total-cart strong {display:none;}
+
+
+/* Footer
+---------------------------------------- */
+.tpl-footer{}
+.tpl-footer-bottom{width: 980px;margin: auto;}
